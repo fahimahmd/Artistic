@@ -1,0 +1,39 @@
+#nav_offcan{
+   .offcanvas{
+       z-index: 999999999;
+
+       .offcanvas-header{
+           background-color: $header_bg;
+           .offcanvas-title{
+           img {
+                height: 35px;
+                width: 85px;
+            }
+           }
+       }
+       .offcanvas-body{
+           background-color: $sky;
+           ul{
+               margin-left: -20px;
+               .dropdown-menu {
+                background-color: $sky;
+                z-index: 999;
+                
+            }
+               li{
+                   padding: 10px 0;
+                   a{
+                    font-family:$roboto;
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: $white;
+                   }
+                   .dropdown-item {
+                    color: $white;
+                    background-color: $sky;
+                }
+               }
+           }
+       }
+   }
+}

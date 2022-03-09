@@ -1,0 +1,113 @@
+#about{
+    margin-top: 250px;
+    .about_main{
+        .about_left{ 
+            position: relative;
+          .about_img{
+
+            img{
+                border: 5px solid $sky;
+                padding: 10px 10px;
+                filter: drop-shadow(0 0 0.75rem $sky);
+                -webkit-filter: drop-shadow(0 0 0.75rem $sky);
+            }
+         }
+         .img_title{
+            height: 80px;
+            width: 250px;
+            background-color: $header_bg;
+            filter: drop-shadow(0 0 0.85rem $sky);
+            -webkit-filter: drop-shadow(0 0 0.85rem $sky);
+            position: absolute;
+            top: 40px;
+            left: 435px;
+            h4{
+                 text-align: center;
+                 font-family: $roboto;
+                 font-size: 22px;
+                 font-weight: 500;
+                 color: $white;
+                padding-top: 15px;
+             }
+             p{
+                text-align: center;
+                font-family: $opensons;
+                font-size: 15px;
+                font-weight: 500;
+                color: $red;
+                
+              }
+          }
+         }
+            .about_right{
+                margin-left: 50px;
+                .about_title{
+                    position: relative;
+                    h4{
+                        font-family: $roboto;
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: $red;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            top: 15px;
+                            left:16%;
+                            height: 2px;
+                            width: 80px;
+                            background-color: $red;  
+                        }
+                    }
+                }
+                .about_text{
+                    h4{
+                        font-family: $oswald;
+                        font-size: 60px;
+                        font-weight: 700;
+                        color: $header_bg;  
+                    }
+                    h5{
+                        font-family: $oswald;
+                        font-size: 60px;
+                        font-weight: 700;
+                        color: $header_bg;  
+                    }
+                    h6{
+                        font-family: $oswald;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: $red;  
+                    }
+                    p{
+                        font-family: $opensons;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #5d5c5c; 
+                        line-height: 24px; 
+                        padding-right: 180px;
+                        padding-top: 10px;
+                    }
+                }
+                .about_button{
+                    margin-top: 30px;
+                    height: 60px;
+                    width: 180px;
+                    background-color: $red;
+                    border: 1px solid $red;
+                    border-radius:5px ;
+                    -webkit-border-radius:5px ;
+                    -moz-border-radius:5px ;
+                    -ms-border-radius:5px ;
+                    -o-border-radius:5px ;
+                    h4{
+                        text-align: center;
+                        font-family: $opensons;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $white;
+                        line-height: 60px;
+                   }
+                }
+            }
+        }
+    }

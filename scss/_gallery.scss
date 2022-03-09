@@ -1,0 +1,74 @@
+#gallery{
+    margin-top: 80px;
+    
+    padding: 100px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .gallery_title{
+        h3{
+            font-family: $roboto;
+            font-size:28px;
+            font-weight: 700;
+            color: $red;
+        }
+        h5{
+            font-family: $roboto;
+            font-size:35px;
+            font-weight:500;
+            color: $header_bg;
+        }
+    }
+    .gallery_img{
+        position: relative;
+        &:hover .gallery_overly{
+           opacity: 1;
+           transition: all linear .3s;
+           -webkit-transition: all linear .3s;
+           -moz-transition: all linear .3s;
+           -ms-transition: all linear .3s;
+           -o-transition: all linear .3s;
+         }
+        img{
+            width: 100%;
+        }
+        .gallery_overly{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #44aaac6b;
+            opacity: 0;
+            .gallery_icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                -webkit-transform: translate(-50% , -50%);
+                -moz-transform: translate(-50% , -50%);
+                -ms-transform: translate(-50% , -50%);
+                -o-transform: translate(-50% , -50%);
+              i{    
+                    font-size: 30px;
+                    color: $white;
+                    padding: 10px 10px;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    &:hover{
+                    color: $white;
+                    background-color: $header_bg;
+                    border-color: $white;
+                    }
+                  }
+            }
+        }
+    }
+}
+.lightbox .lb-image {
+    margin-top: 100px;
+}

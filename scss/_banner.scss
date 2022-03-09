@@ -1,0 +1,131 @@
+#banner{
+  position: relative;
+ 
+  .banner_mian{
+    overflow: hidden;
+     .banner_prev{
+          font-size: 50px;
+          color: $white;
+          border: 1px solid black;
+          padding: 10px 10px;
+          background-color: $red;
+     }
+      .banner_slider{
+          background-size: cover !important;
+          background-position: top !important;
+          background-repeat: no-repeat !important;
+          height: 100vh;
+          width: 100%;
+          z-index: -1;
+         &::after{
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-image: linear-gradient(110deg, #14b0b6 16%, rgba(255,255,255,0) 64%);
+          opacity:.81;
+          z-index: 1;
+         }
+          .banner_item{
+            padding-top: 300px;
+            position: relative;
+            z-index: 9999;
+              h1{
+                font-family:$opensons;
+                font-size: 55px;
+                font-weight: 700;
+                color:$red;
+                padding-bottom: 20px;   
+               }
+               .banner_2_color_text{
+                 color: white !important;
+               }
+              h2{
+                font-family:$opensons;
+                font-size: 50px;
+                font-weight: 500;
+                color:$header_bg;
+              }
+              p{
+                font-family:$roboto;
+                font-size: 16px;
+                font-weight: 400;
+                color:#353232;
+                line-height: 24px;
+                padding-top: 10px;
+              }
+              .banner_button_notend{
+                display: flex;
+                justify-content: start !important;
+              }
+              .banner_button{
+                  display: flex;
+                  justify-content: end;
+                  margin-top: 70px;
+                  .button_1{
+                      height:50px;
+                      width: 130px;
+                      border: 1px solid $red;
+                      text-align: center;
+                      border-radius: 5px;
+                      -webkit-border-radius: 5px;
+                      -moz-border-radius: 5px;
+                      -ms-border-radius: 5px;
+                      -o-border-radius: 5px;
+                      background-color: $red;
+                     
+                      &:hover{
+                        background-color: transparent;
+                        border-color:black;
+                      &:hover a{
+                        color: black;
+                      }
+                    }
+                      
+                    a{
+                          font-family:$roboto;
+                          font-size: 16px;
+                          font-weight: 400;
+                          color:$white;
+                          line-height: 50px;
+                      }
+                  }
+                  .button_2{
+                    height:50px;
+                    width: 130px;
+                    border: 1px solid black;
+                    text-align: center;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    background-color: transparent;
+                    margin-left: 30px;
+                    &:hover{
+                        background-color: $red;
+                        border-color:  $red;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        &:hover a{
+                           color: white;
+                        }
+                          }
+                 a{
+                        font-family:$roboto;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color:black;
+                        line-height: 50px;
+                    }
+                }
+              }
+          }
+        }
+  }
+}

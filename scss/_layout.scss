@@ -1,0 +1,153 @@
+#layout{
+    margin-top: 200px;
+    .layout_thing{
+        .layout_marg{
+            margin-top:24px;
+        }
+        .layout_item{
+            overflow: hidden;
+            &:hover .layout_img img{
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transition: all linear .5s;
+                -webkit-transition: all linear .5s;
+                -moz-transition: all linear .5s;
+                -ms-transition: all linear .5s;
+                -o-transition: all linear .5s;
+              }
+            .layout_img{
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 250px;
+                }
+                .layout_overly{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0.2);
+    
+                    .layout_overly_item_1{
+                        padding: 30px 0 0 40px;
+                        h4{
+                            font-family:$roboto;
+                            font-size: 24px;
+                            font-weight: 700;
+                            color:$white;
+                            text-transform: uppercase;
+                        }
+                        h5{
+                            font-family:$roboto;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color:$red;
+                            
+                        }
+                    }
+                    .layout_overly_button_1{
+                        .button_main_1{
+                            text-align: end;
+                            padding-top: 80px;
+                            padding-right: 45px;
+                            a{
+                                padding: 10px 15px;
+                                background-color: $red;
+                                line-height: 40px;
+                                font-family:$roboto;
+                                font-size: 16px;
+                                font-weight: 500;
+                                color:$white;
+                                border-radius:3px;
+                                -webkit-border-radius:3px;
+                                -moz-border-radius:3px;
+                                -ms-border-radius:3px;
+                                -o-border-radius:3px;
+                                &:hover{
+                                    background-color: #e9265a;
+                                }
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .layout_item_2{
+        overflow: hidden;
+        &:hover .layout_img_2 img{
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transition: all linear .5s;
+            -webkit-transition: all linear .5s;
+            -moz-transition: all linear .5s;
+            -ms-transition: all linear .5s;
+            -o-transition: all linear .5s;
+}
+        .layout_img_2{
+            position: relative;
+            
+            img{
+                width: 100%;
+                height: 525px;
+
+            }
+            .layout_overly_2{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0,0,0,0.2);
+                .layout_overly_item{
+                    padding: 50px 0 0 60px;
+                    h4{
+                        font-family:$roboto;
+                        font-size: 30px;
+                        font-weight: 700;
+                        color:$white;
+                        text-transform: uppercase;
+                    }
+                    h5{
+                        font-family:$roboto;
+                        font-size: 24px;
+                        font-weight: 500;
+                        color:$white;
+                        
+                    }
+                }
+                .layout_overly_button{
+                    .button_main{
+                        text-align: end;
+                        padding-top:250px;
+                        padding-right: 100px;
+                        a{
+                           
+                            font-family:$roboto;
+                            font-size: 20px;
+                            font-weight: 500;
+                            color:$white;
+                            padding: 15px 20px;
+                            background-color: $red;
+                            border-radius: 3px;
+                            -webkit-border-radius: 3px;
+                            -moz-border-radius: 3px;
+                            -ms-border-radius: 3px;
+                            -o-border-radius: 3px;
+                            &:hover{
+                                background-color: #e9265a;
+                            }
+}
+                    }
+                }
+            }
+        }
+    }
+}

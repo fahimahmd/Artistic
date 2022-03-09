@@ -1,0 +1,50 @@
+#premium{
+   background-color: $header_bg;
+   margin-top: 150px;
+   text-align: center;
+   position: relative;
+.premium_card{
+    padding: 100px 0;
+          h2{
+            font-family:$opensons;
+            font-size: 34px;
+            font-weight: 700;
+            color:$white;
+          }
+    }
+   .premium_button{
+    height: 50px;
+    width: 220px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    -webkit-transform: translate(-50%, -85%);
+    -moz-transform: translate(-50%, -85%);
+    -ms-transform: translate(-50%, -85%);
+    -o-transform: translate(-50%, -85%);
+    &:hover{
+        background-color: transparent;
+        border-color: $white;
+        &:hover h5{
+            color: $white;
+        }
+    }
+    h5{
+        font-family:$opensons;
+        font-size: 18px;
+        font-weight: 700;
+        color:$header_bg;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+}

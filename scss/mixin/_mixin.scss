@@ -1,0 +1,35 @@
+@mixin map_puls {
+            height: 35px;
+            width: 35px;
+            background-color: rgba(0,0,0,0.4);
+            animation: pulse 2s infinite;
+            -webkit-animation: pulse 2s infinite;
+            position: relative;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            cursor: pointer;
+}
+
+@mixin map_spot{
+                position: absolute;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+                height: 13px;
+                width: 13px;
+                background-color: $sky;
+                border: 1px solid $white;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                cursor: pointer;
+}
